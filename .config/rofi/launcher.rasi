@@ -35,7 +35,7 @@ inputbar {
 }
 
 entry {
-    placeholder: "Search";
+    placeholder: "";
     placeholder-color: #888888;
     text-color: #ffffff;
     background-color: transparent;
