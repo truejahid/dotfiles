@@ -29,6 +29,7 @@ Small scripts for desktop functionality:
 - `headphone-notify` — Headphone connection notifications
 - `headset-mic-switch` — Headset microphone control
 - `screenshot-ocr` — Screenshot text recognition
+- `mptube` — `mpv` to play YouTube videos
 
 ## Configuration
 
