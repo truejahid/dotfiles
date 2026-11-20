@@ -11,6 +11,7 @@ The desktop environment is built around **Hyprland**, with a minimal, keyboard-d
 - **Rofi** — Application launcher
 - **Mako** — Notifications
 - **SwayOSD** — On-screen display
+- **SDDM** — Display manager
 
 ## Applications
 
