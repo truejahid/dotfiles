@@ -291,7 +291,6 @@ hl.bind(mainMod .. " + SHIFT + F", hl.dsp.exec_cmd(fileManager))
 -- hl.bind(mainMod .. " + SHIFT + V", hl.dsp.window.float({ action = "toggle" }))
 hl.bind(mainMod .. " + CTRL + L", hl.dsp.exec_cmd("hyprlock"))
 
--- hl.bind(mainMod .. " + R", hl.dsp.exec_cmd(menu))
 -- hl.bind(mainMod .. " + P", hl.dsp.window.pseudo())
 hl.bind(mainMod .. " + CTRL + J", hl.dsp.layout("togglesplit")) -- dwindle only
 hl.bind("SUPER + SPACE", hl.dsp.exec_cmd("sh -c 'pkill -x rofi || rofi -show drun -theme ~/.config/rofi/launcher.rasi'"))
