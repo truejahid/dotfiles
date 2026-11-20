@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+
+last=$(< /sys/class/power_supply/ACAD/online)
+
+while IFS= read -r line; do
+    case "$line" in
+        UDEV*)
+            device=""
+            ;;
+        POWER_SUPPLY_NAME=ACAD)
+            device="ACAD"
+            ;;
+        POWER_SUPPLY_ONLINE=1)
+            if [[ "$device" == "ACAD" && "$last" != "1" ]]; then
+                notify-send "Charger connected" "Power adapter connected."
+            fi
+            if [[ "$device" == "ACAD" ]]; then
+                last=1
+            fi
+            ;;
+        POWER_SUPPLY_ONLINE=0)
+            if [[ "$device" == "ACAD" && "$last" != "0" ]]; then
+                notify-send "Charger disconnected" "Power adapter disconnected."
+            fi
+            if [[ "$device" == "ACAD" ]]; then
+                last=0
+            fi
+            ;;
+    esac
+done < <(udevadm monitor --udev --property --subsystem-match=power_supply)

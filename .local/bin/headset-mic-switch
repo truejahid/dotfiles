@@ -1,0 +1,35 @@
+#!/usr/bin/env bash
+
+SINK="alsa_output.pci-0000_03_00.6.analog-stereo"
+SOURCE="alsa_input.pci-0000_03_00.6.analog-stereo"
+
+switch_mic() {
+    sleep 0.2
+
+    port=$(pactl list sinks | awk -v sink="$SINK" '
+        $1 == "Name:" { found = ($2 == sink) }
+        found && $1 == "Active" && $2 == "Port:" {
+            print $3
+            exit
+        }
+    ')
+
+    case "$port" in
+        analog-output-headphones)
+            pactl set-source-port "$SOURCE" analog-input-headset-mic
+            ;;
+        analog-output-speaker)
+            pactl set-source-port "$SOURCE" analog-input-internal-mic
+            ;;
+    esac
+}
+
+switch_mic
+
+pactl subscribe | while IFS= read -r event; do
+    case "$event" in
+        *"on sink "*)
+            switch_mic
+            ;;
+    esac
+done

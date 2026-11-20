@@ -1,0 +1,20 @@
+font=JetBrainsMono Nerd Font
+background-color=#000000FF
+text-color=#EEEEEEFF
+
+width=350
+height=120
+padding=12
+margin=8
+
+border-size=2
+border-color=#555555FF
+border-radius=0
+
+anchor=top-right
+layer=top
+
+markup=1
+format=<b>%s</b>\n<span foreground="#888888">%b</span>
+
+default-timeout=5000

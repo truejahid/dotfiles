@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+# Select an area of the screen
+area=$(slurp) || exit 0
+
+# Capture the selected area and extract text
+text=$(grim -g "$area" - | tesseract stdin stdout 2>/dev/null)
+
+# Check whether any text was detected
+if [[ -z "${text//[[:space:]]/}" ]]; then
+    notify-send "Screenshot OCR" "No text detected."
+    exit 1
+fi
+
+# Copy extracted text to clipboard
+printf '%s' "$text" | wl-copy
+
+# Show notification
+notify-send "Screenshot OCR" "Text copied to clipboard."

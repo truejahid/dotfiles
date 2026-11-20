@@ -1,0 +1,19 @@
+window#osd {
+    background-color: #000000;
+    border: 2px solid #555555;
+    border-radius: 0;
+}
+
+window#osd progressbar,
+window#osd trough,
+window#osd progress {
+    border-radius: 0;
+}
+
+window#osd trough {
+    background-color: #555555;
+}
+
+window#osd progress {
+    background-color: #FFFFFF;
+}
