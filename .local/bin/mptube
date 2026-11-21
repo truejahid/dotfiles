@@ -1,5 +1,0 @@
-#!/usr/bin/env bash
-
-read -r -p "Enter: " link
-
-mpv "$link"
