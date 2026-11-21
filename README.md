@@ -19,6 +19,7 @@ The desktop environment is built around **Hyprland**, with a minimal, keyboard-d
 - **Neovim** — Text editor, configured with LazyVim
 - **Thunar** — File manager
 - **tmux** — Terminal multiplexer
+- **Starship** — Highly customizable command prompt
 - **OBS Studio** — Recording notification script
 
 ## Utilities
