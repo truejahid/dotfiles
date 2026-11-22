@@ -20,7 +20,8 @@
         "network",
         "power-profiles-daemon",
         "battery",
-        "clock"
+        "clock#date",
+        "clock#time"
     ],
 
     "hyprland/workspaces": {
@@ -92,8 +93,13 @@
         }
     },
 
-    "clock": {
-        "format": "{:%d %H:%M}",
+    "clock#date": {
+        "format": "{:%d}",
+        "tooltip": false
+    },
+
+    "clock#time": {
+        "format": "{:%H:%M}",
         "tooltip": false
     },
 }
