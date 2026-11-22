@@ -11,6 +11,12 @@ return {
         on_highlights = function(hl)
           hl.Comment = { fg = "#777777" }
           hl["@comment"] = { fg = "#777777" }
+
+          -- Popup menu: dark grey and fully opaque
+          hl.Pmenu = {
+            bg = "#1A1A1A",
+            blend = 0,
+          }
         end,
       })
     end,
