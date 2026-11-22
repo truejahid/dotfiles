@@ -1,0 +1,38 @@
+# Ignore everything in home
+/*
+
+# Allow selected top-level paths
+!/.config/
+!/.local/
+!/.tmux.conf
+!/sddm-theme/
+!/README.md
+!/.gitignore
+
+# Allow selected application configurations
+/.config/*
+!/.config/hypr/
+!/.config/kitty/
+!/.config/mako/
+!/.config/nvim/
+!/.config/rofi/
+!/.config/swayosd/
+!/.config/waybar/
+!/.config/obs-studio/
+!/.config/starship.toml
+
+# Only track the selected OBS script
+/.config/obs-studio/*
+!/.config/obs-studio/scripts/
+/.config/obs-studio/scripts/*
+!/.config/obs-studio/scripts/recording-notify.lua
+
+# Only track selected files in .local/bin
+/.local/*
+!/.local/nothing.md
+!/.local/bin/
+/.local/bin/*
+!/.local/bin/charging-notify
+!/.local/bin/headphone-notify
+!/.local/bin/headset-mic-switch
+!/.local/bin/screenshot-ocr
