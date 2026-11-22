@@ -49,17 +49,7 @@ window#waybar {
 #battery,
 #clock {
     color: #eeeeee;
-    padding: 0 7px;
-}
-
-/* Dim separators only */
-#custom-separator1,
-#custom-separator2,
-#custom-separator3,
-#custom-separator4,
-#custom-separator5 {
-    color: #666666;
-    padding: 0 3px;
+    padding: 0 8px;
 }
 
 * {
