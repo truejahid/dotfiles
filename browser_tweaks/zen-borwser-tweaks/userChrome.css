@@ -36,3 +36,13 @@ browser {
   border-radius: 0px !important;
 }
 
+/* Prevent Zen Browser from temporarily rounding the viewport during tab-switch animations */
+#tabbrowser-tabpanels,
+#tabbrowser-tabpanels *,
+.browserSidebarContainer,
+.browserContainer,
+.browserStack,
+browser {
+  border-radius: 0px !important;
+  transition-property: none !important;
+}
