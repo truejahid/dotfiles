@@ -1,0 +1,2 @@
+! Hide YouTube homepage recommendations
+www.youtube.com##ytd-browse[page-subtype="home"]

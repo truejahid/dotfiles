@@ -1,9 +1,16 @@
-/* Make internal about: pages and PDF viewer roundless */
+/* 1. Make internal about:, chrome://, and resource:// pages roundless */
 @-moz-document url-prefix("about:"), url-prefix("chrome://"), url-prefix("resource://") {
   *,
   *::before,
   *::after {
     border-radius: 0px !important;
   }
+}
+
+/* 2. Make Zen/Firefox built-in PDF viewer (pdf.js) completely roundless while keeping loaders round */
+#outerContainer *:not(.loadingIcon, .spinner, [class*="spinner" i], [class*="loading" i]),
+#outerContainer *:not(.loadingIcon, .spinner, [class*="spinner" i], [class*="loading" i])::before,
+#outerContainer *:not(.loadingIcon, .spinner, [class*="spinner" i], [class*="loading" i])::after {
+  border-radius: 0px !important;
 }
 
