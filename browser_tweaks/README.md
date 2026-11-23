@@ -1,6 +1,6 @@
 # Browser Tweaks
 
-Zero-rounding setup for **Zen Browser** and **all websites** (preserving circular loading/buffering spinners), plus custom **uBlock Origin** filters.
+Zero-rounding, frameless setup for **Zen Browser** and **all websites** (preserving circular loading/buffering spinners), plus custom **uBlock Origin** filters.
 
 ## Structure
 
@@ -26,6 +26,7 @@ browser_tweaks/
    * `toolkit.legacyUserProfileCustomizations.stylesheets` = `true`
    * `zen.theme.border-radius` = `0`
    * `zen.view.border-radius` = `0`
+   * `zen.theme.content-element-separation` = `0` *(removes outer viewport frame/gap)*
 2. Open `about:support` -> **Profile Folder** -> **Open Folder**.
 3. Copy `userChrome.css` and `userContent.css` into the `chrome` folder (create it if missing).
 4. Restart Zen Browser.
