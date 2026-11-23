@@ -1,0 +1,46 @@
+/* Final Zero-Rounding Web Style — Squares all UI while sparing circular spinners */
+*:not(
+  [class*="spinner" i], [class*="spinner" i] *,
+  [class*="loader" i], [class*="loader" i] *,
+  [class*="loading" i], [class*="loading" i] *,
+  [class*="buffer" i], [class*="buffer" i] *,
+  [class*="throbber" i], [class*="throbber" i] *,
+  [class*="preloader" i], [class*="preloader" i] *,
+  [class*="circular-progress" i], [class*="circular-progress" i] *,
+  [class*="MuiCircularProgress" i], [class*="MuiCircularProgress" i] *,
+  [class*="animate-spin" i], [class*="animate-spin" i] *,
+  [id*="spinner" i], [id*="loader" i], [id*="buffer" i], [id*="throbber" i],
+  [aria-busy="true"], [aria-busy="true"] *,
+  [style*="animation" i], [style*="animation" i] *
+),
+*:not(
+  [class*="spinner" i], [class*="spinner" i] *,
+  [class*="loader" i], [class*="loader" i] *,
+  [class*="loading" i], [class*="loading" i] *,
+  [class*="buffer" i], [class*="buffer" i] *,
+  [class*="throbber" i], [class*="throbber" i] *,
+  [class*="preloader" i], [class*="preloader" i] *,
+  [class*="circular-progress" i], [class*="circular-progress" i] *,
+  [class*="MuiCircularProgress" i], [class*="MuiCircularProgress" i] *,
+  [class*="animate-spin" i], [class*="animate-spin" i] *,
+  [id*="spinner" i], [id*="loader" i], [id*="buffer" i], [id*="throbber" i],
+  [aria-busy="true"], [aria-busy="true"] *,
+  [style*="animation" i], [style*="animation" i] *
+)::before,
+*:not(
+  [class*="spinner" i], [class*="spinner" i] *,
+  [class*="loader" i], [class*="loader" i] *,
+  [class*="loading" i], [class*="loading" i] *,
+  [class*="buffer" i], [class*="buffer" i] *,
+  [class*="throbber" i], [class*="throbber" i] *,
+  [class*="preloader" i], [class*="preloader" i] *,
+  [class*="circular-progress" i], [class*="circular-progress" i] *,
+  [class*="MuiCircularProgress" i], [class*="MuiCircularProgress" i] *,
+  [class*="animate-spin" i], [class*="animate-spin" i] *,
+  [id*="spinner" i], [id*="loader" i], [id*="buffer" i], [id*="throbber" i],
+  [aria-busy="true"], [aria-busy="true"] *,
+  [style*="animation" i], [style*="animation" i] *
+)::after {
+  border-radius: 0 !important;
+}
+

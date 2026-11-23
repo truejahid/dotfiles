@@ -1,0 +1,9 @@
+/* Make internal about: pages and PDF viewer roundless */
+@-moz-document url-prefix("about:"), url-prefix("chrome://"), url-prefix("resource://") {
+  *,
+  *::before,
+  *::after {
+    border-radius: 0px !important;
+  }
+}
+

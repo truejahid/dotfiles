@@ -1,0 +1,38 @@
+/* Reset Zen & Firefox CSS radius variables */
+:root {
+  --zen-border-radius: 0px !important;
+  --border-radius-small: 0px !important;
+  --border-radius-medium: 0px !important;
+  --border-radius-large: 0px !important;
+  --border-radius-circle: 0px !important;
+  --toolbarbutton-border-radius: 0px !important;
+  --tab-border-radius: 0px !important;
+  --arrowpanel-border-radius: 0px !important;
+  --panel-border-radius: 0px !important;
+  --urlbar-border-radius: 0px !important;
+}
+
+/* Strip border-radius across the entire browser UI */
+*,
+*::before,
+*::after {
+  border-radius: 0px !important;
+}
+
+/* High-specificity lock for the floating search bar & viewports */
+#urlbar,
+#urlbar-background,
+.urlbar-background,
+#urlbar[breakout-extend="true"],
+#urlbar[breakout-extend="true"] #urlbar-background,
+#urlbar[zen-floating-urlbar="true"],
+#urlbar[zen-floating-urlbar="true"] #urlbar-background,
+#urlbar[zen-floating-urlbar="true"] .urlbar-background,
+.urlbarView,
+.urlbarView-row,
+.urlbarView-row-inner,
+#tabbrowser-tabpanels,
+browser {
+  border-radius: 0px !important;
+}
+
