@@ -1,4 +1,4 @@
-/* Reset Zen & Firefox CSS radius variables */
+/* 1. Reset Zen & Firefox CSS radius variables */
 :root {
   --zen-border-radius: 0px !important;
   --border-radius-small: 0px !important;
@@ -12,14 +12,14 @@
   --urlbar-border-radius: 0px !important;
 }
 
-/* Strip border-radius across the entire browser UI */
+/* 2. Strip border-radius across the entire browser UI */
 *,
 *::before,
 *::after {
   border-radius: 0px !important;
 }
 
-/* High-specificity lock for the floating search bar & viewports */
+/* 3. High-specificity lock for floating search bar & viewports */
 #urlbar,
 #urlbar-background,
 .urlbar-background,
@@ -32,17 +32,15 @@
 .urlbarView-row,
 .urlbarView-row-inner,
 #tabbrowser-tabpanels,
-browser {
-  border-radius: 0px !important;
-}
-
-/* Prevent Zen Browser from temporarily rounding the viewport during tab-switch animations */
-#tabbrowser-tabpanels,
-#tabbrowser-tabpanels *,
 .browserSidebarContainer,
 .browserContainer,
 .browserStack,
 browser {
   border-radius: 0px !important;
+}
+
+/* 4. Prevent tab-switch rounding flash on web containers without affecting Compact Mode top bar */
+.browserStack,
+browser {
   transition-property: none !important;
 }
