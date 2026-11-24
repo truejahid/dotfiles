@@ -40,7 +40,7 @@
         "tooltip-format": "{used:0.2f} | {total:0.2f} GiB"
     },
 
-      "cpu": {
+    "cpu": {
         "interval": 3,
         "format": "{usage}",
         "tooltip": true,
