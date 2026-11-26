@@ -14,8 +14,8 @@
   "modules-center": [],
 
   "modules-right": [
-    "memory",
     "network",
+    "memory",
     "power-profiles-daemon",
     "battery",
     "clock#date",
