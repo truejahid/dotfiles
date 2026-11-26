@@ -69,8 +69,8 @@
     "interval": 1,
     "format": "{capacity}",
     "tooltip": true,
-    "tooltip-format-charging": "Charging",
-    "tooltip-format-discharging": "Discharging",
+    "tooltip-format-charging": "charging",
+    "tooltip-format-discharging": "discharging",
     "tooltip-format-full": "Full",
 
     "states": {
