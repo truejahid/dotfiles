@@ -7,11 +7,9 @@ return {
       require("koda").setup({
         colors = {
           bg = "#000000",
+          comment = "#777777",
         },
         on_highlights = function(hl)
-          hl.Comment = { fg = "#777777" }
-          hl["@comment"] = { fg = "#777777" }
-
           -- Popup menu: dark grey and fully opaque
           hl.Pmenu = {
             bg = "#1A1A1A",
