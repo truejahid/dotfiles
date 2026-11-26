@@ -7,11 +7,11 @@ window#waybar {
 
 /* Left and right padding */
 .modules-left {
-    padding-left: 4px;
+    padding-left: 2px;
 }
 
 .modules-right {
-    padding-right: 4px;
+    padding-right: 2px;
 }
 
 /* Inactive workspaces */
