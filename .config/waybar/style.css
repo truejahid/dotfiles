@@ -1,44 +1,44 @@
 /* Main bar */
 window#waybar {
-    background-color: #000000;
-    border: none;
-    border-radius: 0;
+  background-color: #000000;
+  border: none;
+  border-radius: 0;
 }
 
 /* Left and right padding */
 .modules-left {
-    padding-left: 2px;
+  padding-left: 2px;
 }
 
 .modules-right {
-    padding-right: 2px;
+  padding-right: 2px;
 }
 
 /* Inactive workspaces */
 #workspaces button {
-    color: #777777;
-    background: transparent;
-    border: none;
-    border-radius: 0;
-    box-shadow: none;
-    text-shadow: none;
-    padding: 0 4px;
-    margin: 0;
+  color: #777777;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  text-shadow: none;
+  padding: 0 4px;
+  margin: 0;
 }
 
 /* Active workspace */
 #workspaces button.active {
-    color: #ffffff;
-    background: transparent;
-    border: none;
-    box-shadow: none;
-    text-shadow: none;
+  color: #ffffff;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  text-shadow: none;
 }
 
 /* Hover */
 #workspaces button:hover {
-    background: transparent;
-    box-shadow: none;
+  background: transparent;
+  box-shadow: none;
 }
 
 /* Right-side modules */
@@ -47,22 +47,22 @@ window#waybar {
 #power-profiles-daemon,
 #battery,
 #clock {
-    color: #eeeeee;
-    padding: 0 8px;
+  color: #eeeeee;
+  padding: 0 8px;
 }
 
 * {
-    font-family: "JetBrainsMono Nerd Font";
-    font-weight: normal;
+  font-family: "JetBrainsMono Nerd Font";
+  font-weight: normal;
 }
 
 tooltip {
-    background-color: #000000;
-    color: #eeeeee;
-    border: 1px solid #555555;
-    border-radius: 0px;
+  background-color: #000000;
+  color: #eeeeee;
+  border: 1px solid #555555;
+  border-radius: 0px;
 }
 
 tooltip label {
-    color: #eeeeee;
+  color: #eeeeee;
 }
